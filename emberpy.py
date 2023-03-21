@@ -24,8 +24,6 @@ class Ember():
         #self.cid = self.fig.canvas.mpl_connect('button_press_event', self._find_click)
         self.cid = self.fig.canvas.mpl_connect('key_press_event', self.key_grab)
 
-        #self.cid = self.fig.canvas.mpl_connect('button_press_event', self.find_click)
-
         self.new_frame = None
 
         self.delay = delay
