@@ -2,13 +2,9 @@
 
 import cv2
 import pylab as pyl, numpy as np
-#import matplotlib
-#matplotlib.use('TkAgg')
 
 # my best focus is at z=26.5
-#
-# for nozzle 1 G1 X 110.28 Y110.06
-# for nozzle 2 G1 X 110.2 Y110
+
 
 class Ember():
     """
