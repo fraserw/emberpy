@@ -24,3 +24,5 @@ numpy
 
 
 Tested on python 3.8 but should work with any python 3.+ variant.
+
+Tested with numpy 1.21.5, matplotlib 3.6.0, and cv2 (opencv) 4.7.0
