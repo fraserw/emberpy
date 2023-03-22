@@ -144,7 +144,11 @@ if __name__ == "__main__":
     parser.add_argument('--rotate',
                         help = 'Rotate n degrees. Values in increments of 90. Negatives allowed. DEFAULT=%(default)s',
                         default = '0')
+    parser.add_argument('--camera_index', help='The index of the camera to use. Adjust this number if the wrong usb camera shows up in the window. DEFAULT=%(default)s',
+                        default = '0')
     args = parser.parse_args()
 
-    ember = Ember(mirror_h = args.mirror_h, mirror_v = args.mirror_v, rotate = int(float(args.rotate)))
+    ember = Ember(mirror_h = args.mirror_h, mirror_v = args.mirror_v,
+                  rotate = int(float(args.rotate)),
+                  camera_index = int(float(args.camera_index)))
     ember.enter()

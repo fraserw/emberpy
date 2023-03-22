@@ -13,8 +13,9 @@ which is useful if your printer has reversed motion.
 
 --rotate swaps the x and y axis labels in case you put your camera in rotated
 
-This script defaults to the first camera plugged in, and so will probably not
-work if you have more than one attached.
+--camera_index is an index used to select the correct usb camera. This defaults
+to 0, but may need to be increased to other positive integers if the user has
+more than one usb camera connected.
 
 Requirements:
 matplotlib
