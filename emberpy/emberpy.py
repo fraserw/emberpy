@@ -81,13 +81,13 @@ class Ember():
         if self.zoom !=0:
             (A,B) = frame.shape[:2]
             a,b = int(A/(self.zoom*2)),int(B/(self.zoom*2))
-            if len(frame) == 3:
+            if len(frame.shape) == 3:
                 frame = frame[ int(A/2)-a:int(A/2)+a+1, int(B/2)-b:int(B/2)+b+1, :]
             else:
                 frame = frame[ int(A/2)-a:int(A/2)+a+1, int(B/2)-b:int(B/2)+b+1,]
 
 
-        if len(frame) == 3:
+        if len(frame.shape) == 3:
             if self.swap_xy: frame = np.transpose(frame, axes=(1,0,2))
             if self.mirror_h: frame = frame[:, ::-1, :]
             if self.mirror_v: frame = frame[::-1, :, :]
